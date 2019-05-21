@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+.quiz-container {
+  position: absolute;
+  min-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.answers {
+  list-style-type: none;
+}
+
+.answer {
+  padding: 5px;
+}
+
+.answer:hover {
+  background-color: lightyellow;
+}
+
+.answer__label {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.navigation-buttons {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.navigation-buttons button:not([disabled]) {
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
